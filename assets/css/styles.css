@@ -250,7 +250,7 @@ img{
 
 /*========== HOME ==========*/
 .home__container{
-  height: calc(100vh - var(--header-height));
+  height: calc(200vh - var(--header-height));
   align-content: center;
 }
 
@@ -267,7 +267,7 @@ img{
 }
 
 .home__img{
-  width: 100px;
+  width: 300px;
   justify-self: center;
 }
 
@@ -394,7 +394,7 @@ img{
 }
 
 .app__img{
-  width: 500px;
+  width: 300px;
   justify-self: center;
 }
 
