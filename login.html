@@ -30,12 +30,14 @@
                 </div>
             </nav>
         </header>
+
+        <main class="l-main">
         
         <!--========== LOGIN ==========-->
         <div class="login">
             <div class="login__content">
                 <div class="login__img">
-                    <img src="assets/img/img-login.svg" alt="">
+                    <img src="loginassets/img/loginimg.svg" alt="">
                 </div>
 
                 <div class="login__forms">
@@ -55,27 +57,6 @@
                         <a href="inventory.html" class="login__button">Sign In</a>
                     </form>
 
-                    <form action="" class="login__create none" id="login-up">
-                        <h1 class="login__title">Create Account</h1>
-    
-                        <div class="login__box">
-                            <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
-                        </div>
-    
-                        <div class="login__box">
-                            <i class='bx bx-at login__icon'></i>
-                            <input type="text" placeholder="Email" class="login__input">
-                        </div>
-
-                        <div class="login__box">
-                            <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
-                        </div>
-
-                        <div>
-                            <span class="login__signup" id="sign-in">Sign In</span>
-                        </div>
 
                     </form>
                 </div>
@@ -83,6 +64,18 @@
         </div>
 
         <!--===== MAIN JS =====-->
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+        <script src="assets/js/main.js"></script>
         <script src="loginassets/js/main.js"></script>
     </body>
 </html>
