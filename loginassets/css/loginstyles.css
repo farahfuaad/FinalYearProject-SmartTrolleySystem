@@ -40,7 +40,7 @@ body{
   padding: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--first-color-dark);
+  color: #048654;
 }
 
 h1{
@@ -184,15 +184,7 @@ img{
   cursor: pointer;
 }
 
-.login__social{
-  margin-top: 2rem;
-}
 
-.login__social-icon{
-  font-size: 1.5rem;
-  color: var(--first-color-dark);
-  margin: 0 1.5rem;
-}
 
 /*Show login*/
 .block{
