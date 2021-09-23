@@ -1,81 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="loginassets/css/loginstyles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Log In</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="index.html" class="nav__logo">Nowhere Else Market</a>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="loginassets/css/loginstyle.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                    </ul>
-                </div>
+    <title>Login</title>
+</head>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">Nowhere Else Market</a>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-        
-        <!--========== LOGIN ==========-->
-        <div class="login">
-            <div class="login__content">
-                <div class="login__img">
-                    <img src="loginassets/img/loginimg.svg" alt="">
-                </div>
-
-                <div class="login__forms">
-                    <form action="" class="login__registre" id="login-in">
-                        <h1 class="login__title">Sign In</h1>
-    
-                        <div class="login__box">
-                            <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
-                        </div>
-    
-                        <div class="login__box">
-                            <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
-                        </div>
-
-                        <a href="inventory.html" class="login__button">Sign In</a>
-                    </form>
-
-
-                    </form>
-                </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
             </div>
-        </div>
 
-        <!--===== MAIN JS =====-->
-        <script language="javascript">
-            function check(form) { /*function to check userid & password*/
-                /*the following code checkes whether the entered userid and password are matching*/
-                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
-                    window.open('target.html')/*opens the target page while Id & password matches*/
-                }
-                else {
-                    alert("Error Password or Username")/*displays error message*/
-                }
-            }
-        </script>
-        <script src="assets/js/main.js"></script>
-        <script src="loginassets/js/main.js"></script>
-    </body>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+    <!--========== LOGIN FORM ==========-->
+    <section id="login-window">
+        <h1>Sign In</h1>
+        <form id="login">
+            <input type="text" placeholder="Enter Your Username" class="form-input" autocomplete="off" id="username">
+            <p class="error" id="username-error"> * Username is required ! </p>
+        
+            <input type="password" placeholder="Enter Your Password" class="form-input" autocomplete="off" id="password">
+            <p class="error" id="password-error"> * Password is required ! </p>
+
+            <button class="login-btn" type="button"> Login</button>
+        </form>
+    </section>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="loginassets/js/main.js"></script>
+</body>
 </html>

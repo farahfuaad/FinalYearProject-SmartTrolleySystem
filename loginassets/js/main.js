@@ -1,23 +1,41 @@
-/*===== LOGIN SHOW and HIDDEN =====*/
-const 
-loginIn = document.getElementById('login-in'),
-loginUp = document.getElementById('login-up')
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const usernameError = document.getElementById("username-error");
+const passwordError = document.getElementById("password-error");
+const submitBtn = document.querySelector(".login-btn");
 
-signIn.addEventListener('click', ()=>{
-    // Remove classes first if they exist
-    loginIn.classList.remove('none')
-    loginUp.classList.remove('block')
+username.addEventListener("keyup", () => {
+  if (username.value == "") {
+    usernameError.style.display = "block";
+  } else {
+    usernameError.style.display = "none";
+  }
+});
 
-    // Add classes
-    loginIn.classList.toggle('block')
-    loginUp.classList.toggle('none')
-})
+password.addEventListener("keyup", () => {
+  if (password.value == "") {
+    passwordError.style.display = "block";
+  } else {
+    passwordError.style.display = "none";
+  }
+});
 
-var usr = document.getElementById
+submitBtn.addEventListener("click", () => {
+  if (username.value == "") {
+    usernameError.style.display = "block";
+  }
+  if (password.value == "") {
+    passwordError.style.display = "block";
+  }
+  else{
+      usernameError.style.display = 'none';
+      passwordError.style.display = "none";
+      let cred = {
+          userName: "admin",
+          password: "1234"
+      }
 
-if(usr=="admin" || ps=="1234"){
-    button = window.location.href = "inventory.html";
-}
-else{
-    button = window.location.href = "login.html";
-}
+      console.log(cred);
+
+  }
+});
