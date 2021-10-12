@@ -1,3 +1,5 @@
+
+   
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const usernameError = document.getElementById("username-error");
@@ -31,8 +33,8 @@ submitBtn.addEventListener("click", () => {
       usernameError.style.display = 'none';
       passwordError.style.display = "none";
       let cred = {
-          userName: "admin",
-          password: "1234"
+          userName: `${username.value}`,
+          password: `${password.value}`
       }
 
       console.log(cred);
