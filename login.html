@@ -1,4 +1,13 @@
+<?php
+session_start();
+include("dbconnect.php");
+include("login.php");
+
+$user_data = check_login($conn);
+?>
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
