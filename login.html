@@ -7,69 +7,45 @@ $user_data = check_login($conn);
 ?>
 
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <title>Login Form | CodingLab</title> -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="loginassets/css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="loginassets/css/loginstyles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Login</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
+</head>
+<body>
+    <section class="side">
+        <img src="./images/img.svg" alt="">
+    </section>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-  </head>
+    <section class="main">
+        <div class="login-container">
+            <p class="title">Welcome back</p>
+            <div class="separator"></div>
+            <p class="welcome-message">Please, provide login credential to proceed and have access to all our services</p>
 
+            <form class="login-form">
+                <div class="form-control">
+                    <input type="text" placeholder="Username">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password">
+                    <i class="fas fa-lock"></i>
+                </div>
 
-  <body>
-
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
-
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="index.html" class="nav__logo">Nowhere Else Market</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-
-    <div class="container">
-      <div class="wrapper">
-        <div class="title"><span>Login Form</span></div>
-        <form action="inventory.html">
-          <div class="row">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Email or Phone" required>
-          </div>
-          <div class="row">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
-          </div>
-          <div class="row button">
-            <input type="submit" value="Login">
-        </form>
-      </div>
-    </div>
-
+                <button class="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>

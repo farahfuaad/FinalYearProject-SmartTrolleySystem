@@ -1,101 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #303433;
 }
 
-::selection{
-  background: rgba(26,188,156,0.3);
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.wrapper{
-  width: 100%;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
-}
-.wrapper .title{
-  height: 90px;
-  background: #16a085;
-  border-radius: 5px 5px 0 0;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+section {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.wrapper form{
-  padding: 30px 25px 25px 25px;
+
+section.side {
+  background: url(./images/bk.png) no-repeat;
+  background-size: 100% 102%;
 }
-.wrapper form .row{
-  height: 45px;
-  margin-bottom: 15px;
-  position: relative;
+
+.side img {
+  width: 50%;
+  max-width: 50%;
 }
-.wrapper form .row input{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  padding-left: 60px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-form .row input:focus{
-  border-color: #16a085;
-  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
-}
-form .row input::placeholder{
-  color: #999;
-}
-.wrapper form .row i{
-  position: absolute;
-  width: 47px;
-  height: 100%;
-  color: #fff;
-  font-size: 18px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  border-radius: 5px 0 0 5px;
+
+.login-container {
+  max-width: 450px;
+  padding: 24px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-.wrapper form .pass{
-  margin: -8px 0 20px 0;
-}
-.wrapper form .pass a{
-  color: #16a085;
-  font-size: 17px;
-  text-decoration: none;
-}
-.wrapper form .pass a:hover{
-  text-decoration: underline;
-}
-.wrapper form .button input{
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  padding-left: 0px;
-  background: #ffffff00;;
-  cursor: pointer;
-}
-form .button input:hover{
-  background: #12876f;
-}
-.wrapper form .signup-link{
+
+.title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
   text-align: center;
-  margin-top: 20px;
-  font-size: 17px;
+  letter-spacing: 1px;
 }
-.wrapper form .signup-link a{
-  color: #16a085;
-  text-decoration: none;
+
+.separator {
+  width: 150px;
+  height: 4px;
+  background-color: #843bc7;
+  margin: 24px;
 }
-form .signup-link a:hover{
-  text-decoration: underline;
+
+.welcome-message {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: #696969;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+
+input {
+  width: 100%;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 64px;
+}
+
+input ~ i {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  transition: color   0.4s;
+}
+
+input:focus ~ i {
+  color: #843bc7;
+}
+
+button.submit {
+  color: #fff;
+  padding: 14px 64px;
+  margin: 32px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #8b33c5, #15a0e1);
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+button.submit:hover {
+  opacity: 0.9;
+}
+
+/* ----  Responsiveness   ----  */
+@media (max-width: 780px) {
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .side {
+      display: none;
+  }
 }
