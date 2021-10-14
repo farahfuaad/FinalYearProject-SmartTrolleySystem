@@ -5,14 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="loginassets/css/styles.css">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Login form responsive</title>  
+        <title>Login</title>  
     </head>
     <body>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="index.html" class="nav__logo">Nowhere Else Market</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
         <div class="l-form">
             <div class="shape1"></div>
             <div class="shape2"></div>
@@ -44,8 +57,6 @@
                             <input type="password" class="form__input">
                         </div>
                     </div>
-                    <a href="#" class="form__forgot">Forgot Password?</a>
-
                     <input type="submit" class="form__button" value="Login">
                 </form>
             </div>
@@ -54,5 +65,6 @@
         
         <!-- ===== MAIN JS ===== -->
         <script src="assets/js/main.js"></script>
+        <script src="loginassets/js/main.js"></script>
     </body>
 </html>
