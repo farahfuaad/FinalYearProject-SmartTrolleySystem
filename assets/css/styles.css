@@ -474,6 +474,14 @@ img{
     order: -1;
   }
 
+  .inventoryimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+  }
+
   .contact__container{
     grid-template-columns: 1.75fr 1fr;
     align-items: center;
