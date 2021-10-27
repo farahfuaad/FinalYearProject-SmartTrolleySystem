@@ -33,8 +33,8 @@ height="200"></center></a>
  <div class="row">
  <div class="col-md-12">
  <div class="page-header clearfix">
- <h2 class="pull-left">Game Record</h2>
- <a href="create.php" class="btn btn-success pull-right">Add other games</a>
+ <h2 class="pull-left">Stocks</h2>
+ <a href="create.php" class="btn btn-success pull-right">Add products/a>
  </div>
 
  <?php
@@ -48,12 +48,11 @@ height="200"></center></a>
     echo "<table class='table table-bordered table-striped'>";
     echo "<thead>";
     echo "<tr>";
-    echo "<th><center>Game ID</center></th>";
-    echo "<th><center>Game Title</center></th>";
-    echo "<th><center>Genre</center></th>";
-    echo "<th><center>Years</center></th>";
-    echo
-    "<th><center>Quantity</center></th>";
+    echo "<th><center>Product ID</center></th>";
+    echo "<th><center>Product Name</center></th>";
+    echo "<th><center>Description</center></th>";
+    echo "<th><center>Price</center></th>";
+    echo "<th><center>Quantity</center></th>";
     echo
     "<th><center>Availability</center></th>";
     echo
@@ -63,10 +62,10 @@ height="200"></center></a>
     echo "<tbody>";
     while($row = mysqli_fetch_array($result)){
     echo "<tr>";
-    echo "<td><center>" . $row['id'] . "</center></td>";
-    echo "<td><center>" . $row['gametitle'] . "</center></td>";
-    echo "<td><center>" . $row['genre'] . "</center></td>";
-    echo "<td><center>" . $row['years'] . "</center></td>";
+    echo "<td><center>" . $row['p_id'] . "</center></td>";
+    echo "<td><center>" . $row['p_name'] . "</center></td>";
+    echo "<td><center>" . $row['p_desc'] . "</center></td>";
+    echo "<td><center>" . $row['price'] . "</center></td>";
     echo
     "<td><center>" . $row['quantity'] . "</center></td>";
     echo "<td><center>" . $row['availability'] . "</center></td>";
