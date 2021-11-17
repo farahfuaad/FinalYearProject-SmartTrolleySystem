@@ -12,7 +12,6 @@
 
 /*=== Fuente y tipografia ===*/
 :root{
-    --body-font: 'Roboto', sans-serif;
     --big-font-size: 2rem;
     --normal-font-size: 0.938rem;
     --smaller-font-size: 0.875rem;

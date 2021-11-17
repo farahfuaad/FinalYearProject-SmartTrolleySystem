@@ -1,35 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <?php 
-
-    include 'sqltest.php';
-    
-    session_start();
-    
-    error_reporting(0);
-    
-    if (isset($_SESSION['username'])) {
-        header("Location: welcome.php");
-    }
-    
-    if (isset($_POST['submit'])) {
-        $email = $_POST['email'];
-        $password = md5($_POST['password']);
-    
-        $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-        $result = mysqli_query($conn, $sql);
-        if ($result->num_rows > 0) {
-            $row = mysqli_fetch_assoc($result);
-            $_SESSION['username'] = $row['username'];
-            header("Location: welcome.php");
-        } else {
-            echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
-        }
-    }
-    
-    ?>
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +7,9 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="loginassets/css/loginstyles.css">
+        
+        <!-- ===== PHP ===== -->
+        <?php require 'login.php'; ?>
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -78,7 +51,7 @@
 
                         <div class="form__div-input">
                             <label for="" class="form__label">Username</label>
-                            <input type="text" class="form__input" name="email" value="<?php echo $email; ?>" required>
+                            <input type="text" class="form__input" name="username" value="<?php echo $email; ?>" required>
                         </div>
                     </div>
 
@@ -89,7 +62,7 @@
 
                         <div class="form__div-input">
                             <label for="" class="form__label">Password</label>
-                            <input type="password" class="form__input" name="email" value="<?php echo $email; ?>" required>
+                            <input type="password" class="form__input" name="password" value="<?php echo $email; ?>" required>
                         </div>
                     </div>
                     <input type="submit" class="form__button" value="Login">
