@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8" />
-	<title>Inventory</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-	<meta content="Themesbrand" name="author" />
-	<!-- App favicon -->
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Customer Information</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        	<!-- App favicon -->
 	<link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
 	<!-- Bootstrap Css -->
 	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
 	<!-- Icons Css -->
 	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 	<!-- App Css-->
-	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" /> 
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +48,6 @@
 				</div>
 				<div class="d-flex">
 					<div class="dropdown d-inline-block d-lg-none ms-2">
-						<button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="uil-search"></i> </button>
 						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
 							<form class="p-3">
 								<div class="m-0">
@@ -58,135 +60,6 @@
 								</div>
 							</form>
 						</div>
-					</div>
-					<div class="dropdown d-inline-block language-switch">
-						<button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="assets/images/flags/us.jpg" alt="Header Language" height="16"> </button>
-						<div class="dropdown-menu dropdown-menu-end">
-							<!-- item-->
-							<a href="javascript:void(0);" class="dropdown-item notify-item"> <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span> </a>
-							<!-- item-->
-							<a href="javascript:void(0);" class="dropdown-item notify-item"> <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span> </a>
-							<!-- item-->
-							<a href="javascript:void(0);" class="dropdown-item notify-item"> <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span> </a>
-							<!-- item-->
-							<a href="javascript:void(0);" class="dropdown-item notify-item"> <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span> </a>
-						</div>
-					</div>
-					<div class="dropdown d-none d-lg-inline-block ms-1">
-						<button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="uil-apps"></i> </button>
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-							<div class="px-lg-2">
-								<div class="row g-0">
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/github.png" alt="Github"> <span>GitHub</span> </a>
-									</div>
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/bitbucket.png" alt="bitbucket"> <span>Bitbucket</span> </a>
-									</div>
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/dribbble.png" alt="dribbble"> <span>Dribbble</span> </a>
-									</div>
-								</div>
-								<div class="row g-0">
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/dropbox.png" alt="dropbox"> <span>Dropbox</span> </a>
-									</div>
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp"> <span>Mail Chimp</span> </a>
-									</div>
-									<div class="col">
-										<a class="dropdown-icon-item" href="#"> <img src="assets/images/brands/slack.png" alt="slack"> <span>Slack</span> </a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="dropdown d-none d-lg-inline-block ms-1">
-						<button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen"> <i class="uil-minus-path"></i> </button>
-					</div>
-					<div class="dropdown d-inline-block">
-						<button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="uil-bell"></i> <span class="badge bg-danger rounded-pill">3</span> </button>
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
-							<div class="p-3">
-								<div class="row align-items-center">
-									<div class="col">
-										<h5 class="m-0 font-size-16"> Notifications </h5> </div>
-									<div class="col-auto"> <a href="#!" class="small"> Mark all as read</a> </div>
-								</div>
-							</div>
-							<div data-simplebar style="max-height: 230px;">
-								<a href="" class="text-reset notification-item">
-									<div class="d-flex align-items-start">
-										<div class="flex-shrink-0 me-3">
-											<div class="avatar-xs"> <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                        <i class="uil-shopping-basket"></i>
-                                                    </span> </div>
-										</div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1">Your order is placed</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1">If several languages coalesce the grammar</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="text-reset notification-item">
-									<div class="d-flex align-items-start">
-										<div class="flex-shrink-0 me-3"> <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="user-pic"> </div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1">James Lemire</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1">It will seem like simplified English.</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="text-reset notification-item">
-									<div class="d-flex align-items-start">
-										<div class="flex-shrink-0 me-3">
-											<div class="avatar-xs"> <span class="avatar-title bg-success rounded-circle font-size-16">
-                                                        <i class="uil-truck"></i>
-                                                    </span> </div>
-										</div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1">Your item is shipped</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1">If several languages coalesce the grammar</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="text-reset notification-item">
-									<div class="d-flex align-items-start">
-										<div class="flex-shrink-0 me-3"> <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="user-pic"> </div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1">Salena Layfield</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="p-2 border-top">
-								<div class="d-grid">
-									<a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)"> <i class="uil-arrow-circle-right me-1"></i> View More.. </a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="dropdown d-inline-block">
-						<button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar"> <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Marcus</span> <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i> </button>
-						<div class="dropdown-menu dropdown-menu-end">
-							<!-- item--><a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted me-1"></i> <span class="align-middle">View Profile</span></a> <a class="dropdown-item" href="#"><i class="uil uil-wallet font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">My Wallet</span></a> <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Settings</span> <span class="badge bg-soft-success rounded-pill mt-1 ms-2">03</span></a> <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Lock screen</span></a> <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Sign out</span></a> </div>
-					</div>
-					<div class="dropdown d-inline-block">
-						<button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect"> <i class="uil-cog"></i> </button>
-					</div>
 				</div>
 			</div>
 		</header>
@@ -194,19 +67,16 @@
 		<div class="vertical-menu">
 			<!-- LOGO -->
 			<div class="navbar-brand-box">
-				<a href="index.html" class="logo logo-dark"> <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+				<a href="adminhub.html" class="logo logo-dark"> <span class="logo-sm">
+                            <img src="assets/img/nwlogo.png" alt="" height="82">
                         </span> <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="" height="20">
+							<img src="assets/img/nwlogo.png" alt="" height="80">
                         </span> </a>
 				<a href="index.html" class="logo logo-light"> <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                            <img src="assets/img/nwlogo.png" alt="" height="82">
                         </span> <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="" height="20">
+                            <img src="assets/img/nwlogo.png" alt="" height="80">
                         </span> </a>
-			</div>
-			<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"> <i class="fa fa-fw fa-bars"></i> </button>
-			<div data-simplebar class="sidebar-menu-scroll">
 				<!--- Sidemenu -->
 				<div id="sidebar-menu">
 					<!-- Left Menu Start -->
@@ -215,406 +85,254 @@
 						<li>
 							<a href="index.html"> <i class="iconify " data-icon="uil-home-alt" data-inline="false"></i> <span class="badge rounded-pill bg-primary float-end"></span> <span>Dashboard</span> </a>
 						</li>
-						<li class="menu-title">Others</li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-store"></i> <span>All inventory</span> </a>
-							<ul class="sub-menu" aria-expanded="false">
-								<li><a href="tables-editable.html">Stocks</a></li>
-								<li><a href="ecommerce-orders.html">Orders</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-invoice"></i> <span>Invoices</span> </a>
-							<ul class="sub-menu" aria-expanded="false">
-								<li><a href="invoices-list.html">Invoice List</a></li>
-								<li><a href="invoices-detail.html">Invoice Detail</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-book-alt"></i> <span>Customers</span> </a>
-							<ul class="sub-menu" aria-expanded="false">
-								<li><a href="contacts-list.html">Customer Infomation</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="login.html">Sign Out</a>
-						</li>
-					</ul>
-				</div>
-				<!-- Sidebar -->
-			</div>
-		</div>
-		<!-- Left Sidebar End -->
-		<!-- ============================================================== -->
-		<!-- Start right Content here -->
-		<!-- ============================================================== -->
-		<div class="main-content">
-			<div class="page-content">
-				<div class="container-fluid">
-					<!-- start page title -->
-					<div class="row">
-						<div class="col-12">
-							<div class="page-title-box d-flex align-items-center justify-content-between">
-								<h4 class="mb-0">User List</h4>
-								<div class="page-title-right">
-									<ol class="breadcrumb m-0">
-										<li class="breadcrumb-item"><a href="javascript: void(0);">Contacts</a></li>
-										<li class="breadcrumb-item active">User List</li>
-									</ol>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end page title -->
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row mb-2">
-										<div class="col-md-6">
-											<div class="mb-3"> <a href="javascript:void(0);" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-plus me-2"></i> Add New</a> </div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-inline float-md-end mb-3">
-												<div class="search-box ms-2">
-													<div class="position-relative">
-														<input type="text" class="form-control rounded bg-light border-0" placeholder="Search..."> <i class="mdi mdi-magnify search-icon"></i> </div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end row -->
-									<div class="table-responsive mb-4">
-										<table class="table table-centered table-nowrap mb-0">
-											<thead>
-												<tr>
-													<th scope="col" style="width: 50px;">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck">
-															<label class="form-check-label" for="contacusercheck"></label>
-														</div>
-													</th>
-													<th scope="col">Name</th>
-													<th scope="col">Position</th>
-													<th scope="col">Email</th>
-													<th scope="col" style="width: 200px;">Action</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck1">
-															<label class="form-check-label" for="contacusercheck1"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Simon Ryles</a> </td>
-													<td>Full Stack Developer</td>
-													<td>SimonRyles@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck2">
-															<label class="form-check-label" for="contacusercheck2"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Marion Walker</a> </td>
-													<td>Frontend Developer</td>
-													<td>MarionWalker@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck3">
-															<label class="form-check-label" for="contacusercheck3"></label>
-														</div>
-													</th>
-													<td>
-														<div class="avatar-xs d-inline-block me-2">
-															<div class="avatar-title bg-soft-primary rounded-circle text-primary"> <i class="mdi mdi-account-circle m-0"></i> </div>
-														</div> <a href="#" class="text-body">Frederick White</a> </td>
-													<td>UI/UX Designer</td>
-													<td>FrederickWhite@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck4">
-															<label class="form-check-label" for="contacusercheck4"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-4.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Shanon Marvin</a> </td>
-													<td>Backend Developer</td>
-													<td>ShanonMarvin@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck5">
-															<label class="form-check-label" for="contacusercheck5"></label>
-														</div>
-													</th>
-													<td>
-														<div class="avatar-xs d-inline-block me-2">
-															<div class="avatar-title bg-soft-primary rounded-circle text-primary"> <i class="mdi mdi-account-circle m-0"></i> </div>
-														</div> <a href="#" class="text-body">Mark Jones</a> </td>
-													<td>Frontend Developer</td>
-													<td>MarkJones@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Remove</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck6">
-															<label class="form-check-label" for="contacusercheck6"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-5.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Janice Morgan</a> </td>
-													<td>Backend Developer</td>
-													<td>JaniceMorgan@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck7">
-															<label class="form-check-label" for="contacusercheck7"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Patrick Petty</a> </td>
-													<td>UI/UX Designer</td>
-													<td>PatrickPetty@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck8">
-															<label class="form-check-label" for="contacusercheck8"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-8.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Marilyn Horton</a> </td>
-													<td>Backend Developer</td>
-													<td>MarilynHorton@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck9">
-															<label class="form-check-label" for="contacusercheck9"></label>
-														</div>
-													</th>
-													<td> <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle me-2"> <a href="#" class="text-body">Neal Womack</a> </td>
-													<td>Full Stack Developer</td>
-													<td>NealWomack@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="form-check font-size-16">
-															<input type="checkbox" class="form-check-input" id="contacusercheck10">
-															<label class="form-check-label" for="contacusercheck10"></label>
-														</div>
-													</th>
-													<td>
-														<div class="avatar-xs d-inline-block me-2">
-															<div class="avatar-title bg-soft-primary rounded-circle text-primary"> <i class="mdi mdi-account-circle m-0"></i> </div>
-														</div> <a href="#" class="text-body">Steven Williams</a> </td>
-													<td>Frontend Developer</td>
-													<td>Steven Williams@minible.com</td>
-													<td>
-														<ul class="list-inline mb-0">
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-primary"><i class="uil uil-pen font-size-18"></i></a> </li>
-															<li class="list-inline-item"> <a href="javascript:void(0);" class="px-2 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </li>
-															<li class="list-inline-item dropdown">
-																<a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"> <i class="uil uil-ellipsis-v"></i> </a>
-																<div class="dropdown-menu dropdown-menu-end"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="row mt-4">
-										<div class="col-sm-6">
-											<div>
-												<p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="float-sm-end">
-												<ul class="pagination mb-sm-0">
-													<li class="page-item disabled"> <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a> </li>
-													<li class="page-item"> <a href="#" class="page-link">1</a> </li>
-													<li class="page-item active"> <a href="#" class="page-link">2</a> </li>
-													<li class="page-item"> <a href="#" class="page-link">3</a> </li>
-													<li class="page-item"> <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a> </li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end row -->
-				</div>
-				<!-- container-fluid -->
-			</div>
-			<!-- End Page-content -->
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-6">
-							<script>
-							document.write(new Date().getFullYear())
-							</script> © Soeng Souy. </div>
-						<div class="col-sm-6">
-							<div class="text-sm-end d-none d-sm-block"> Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://soengsouy.com/" target="_blank" class="text-reset">Soeng Souy</a> </div>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<!-- end main content-->
-	</div>
-	<!-- END layout-wrapper -->
-	<!-- Right Sidebar -->
-	<div class="right-bar">
-		<div data-simplebar class="h-100">
-			<div class="rightbar-title d-flex align-items-center px-3 py-4">
-				<h5 class="m-0 me-2">Settings</h5>
-				<a href="javascript:void(0);" class="right-bar-toggle ms-auto"> <i class="mdi mdi-close noti-icon"></i> </a>
-			</div>
-			<!-- Settings -->
-			<hr class="mt-0" />
-			<h6 class="text-center mb-0">Choose Layouts</h6>
-			<div class="p-4">
-				<div class="mb-2"> <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images"> </div>
-				<div class="form-check form-switch mb-3">
-					<input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
-					<label class="form-check-label" for="light-mode-switch">Light Mode</label>
-				</div>
-				<div class="mb-2"> <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images"> </div>
-				<div class="form-check form-switch mb-3">
-					<input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" />
-					<label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-				</div>
-				<div class="mb-2"> <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images"> </div>
-				<div class="form-check form-switch mb-3">
-					<input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" />
-					<label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
-				</div>
-				<div class="mb-2"> <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images"> </div>
-				<div class="form-check form-switch mb-5">
-					<input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
-					<label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
-				</div>
-			</div>
-		</div>
-		<!-- end slimscroll-menu-->
-	</div>
-	<!-- /Right-bar -->
-	<!-- Right bar overlay-->
-	<div class="rightbar-overlay"></div>
-	<!-- JAVASCRIPT -->
-	<script src="assets/libs/jquery/jquery.min.js"></script>
-	<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/libs/metismenu/metisMenu.min.js"></script>
-	<script src="assets/libs/simplebar/simplebar.min.js"></script>
-	<script src="assets/libs/node-waves/waves.min.js"></script>
-	<script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-	<script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
-	<!-- App js -->
-	<script src="assets/js/app.js"></script>
-</body>
+                            <li class="menu-title">Others</li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-store"></i> <span>All inventory</span> </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="stocks.html">Stocks</a></li>
+                                    <li><a href="ecommerce-orders.html">Orders</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-invoice"></i> <span>Invoices</span> </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="invoices-list.html">Invoice List</a></li>
+                                    <li><a href="invoices-detail.html">Invoice Detail</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-book-alt"></i> <span>Customers</span> </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="contacts-list.html">Customer Infomation</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="login.html">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
 
+            
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0">Stocks</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Products Stocks</h4>
+                                        <p class="card-title-desc">Currrent product that still available.</p>
+        
+                                        <div class="table-responsive">
+                                            <table class="table table-editable table-nowrap align-middle table-edits">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product ID</th>
+                                                        <th>Name</th>
+                                                        <th>Description</th>
+                                                        <th>Price</th>
+                                                        <th>Quantity</th>
+                                                        <th>Edit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-id="1">
+                                                        <td data-field="id" style="width: 80px">123</td>
+                                                        <td data-field="name">mint's avocado</td>
+                                                        <td data-field="desc">600g</td>
+                                                        <td data-field="price">18.75</td>
+                                                        <td data-field="qty">100</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="2">
+                                                        <td data-field="id" style="width: 80px">345</td>
+                                                        <td data-field="name">rolled oat</td>
+                                                        <td data-field="desc">500g</td>
+                                                        <td data-field="price">23.45</td>
+                                                        <td data-field="qty">145</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="3">
+                                                        <td data-field="id" style="width: 80px">765</td>
+                                                        <td data-field="name">organic brown rice</td>
+                                                        <td data-field="desc">250g</td>
+                                                        <td data-field="price">14.54</td>
+                                                        <td data-field="qty">150</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="4">
+                                                        <td data-field="id" style="width: 80px">1123</td>
+                                                        <td data-field="name">frozen prawn</td>
+                                                        <td data-field="desc">200g</td>
+                                                        <td data-field="price">10.00</td>
+                                                        <td data-field="qty">50</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="5">
+                                                        <td data-field="id" style="width: 80px">1247</td>
+                                                        <td data-field="name">potato wedges</td>
+                                                        <td data-field="desc">500g</td>
+                                                        <td data-field="price">15.90</td>
+                                                        <td data-field="qty">45</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="6">
+                                                        <td data-field="id" style="width: 80px">2376</td>
+                                                        <td data-field="name">sungold kiwi</td>
+                                                        <td data-field="desc">per pack</td>
+                                                        <td data-field="price">20.90</td>
+                                                        <td data-field="qty">100</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="7">
+                                                        <td data-field="id" style="width: 80px">9876</td>
+                                                        <td data-field="name">frozen chopped spinach</td>
+                                                        <td data-field="desc">400g</td>
+                                                        <td data-field="price">12.90</td>
+                                                        <td data-field="qty">50</td>
+                                                        <td style="width: 100px">
+                                                            <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                </table>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                    </div> <!-- container-fluid -->
+                </div>
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+
+                <div class="rightbar-title d-flex align-items-center px-3 py-4">
+            
+                    <h5 class="m-0 me-2">Settings</h5>
+
+                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                </div>
+
+
+
+                <!-- Settings -->
+                <hr class="mt-0" />
+                <h6 class="text-center mb-0">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" />
+                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" />
+                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+                    <div class="form-check form-switch mb-5">
+                        <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
+                        <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                    </div>
+
+            
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+        
+        <!-- Table Editable plugin -->
+        <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+
+        <script src="assets/js/pages/table-editable.int.js"></script> 
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
 </html>
