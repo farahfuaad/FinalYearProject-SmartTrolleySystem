@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Orders</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+	<meta content="Themesbrand" name="author" />
+	<!-- App favicon -->
+	<link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
+	<!-- Bootstrap Css -->
+	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+	<!-- DataTables -->
+	<link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<!-- Responsive datatable examples -->
+	<link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<!-- <body data-layout="horizontal" data-topbar="colored"> -->
+		<!-- Begin page -->
+		<div id="layout-wrapper">
+			<header id="page-topbar">
+				<div class="navbar-header">
+					<div class="d-flex">
+						<!-- LOGO -->
+						<div class="navbar-brand-box">
+							<a href="adminhub.html" class="logo logo-dark">
+							<span class="logo-sm">
+								<img src="assets/img/logo.png" alt="" height="22">
+							</span>
+							<a href="adminhub.html" class="logo logo-light"> <span class="logo-sm">
+							<img src="assets/img/logo.png" alt="" height="22">
+							</span> <span class="logo-lg">
+								<img src="assets/img/logo.png" alt="" height="20">
+							</span> </a>
+						</div>
+						<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"> <i class="fa fa-fw fa-bars"></i> </button>
+						<!-- App Search-->
+						<form class="app-search d-none d-lg-block">
+							<div class="position-relative">
+								<input type="text" class="form-control" placeholder="Search..."> <span class="uil-search"></span> </div>
+						</form>
+					</div>
+					<div class="d-flex">
+						<div class="dropdown d-inline-block d-lg-none ms-2">
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+								<form class="p-3">
+									<div class="m-0">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+											<div class="input-group-append">
+												<button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+					</div>
+				</div>
+			</header>
+			<!-- ========== Left Sidebar Start ========== -->
+			<div class="vertical-menu">
+				<!-- LOGO -->
+				<div class="navbar-brand-box">
+					<a href="adminhub.html" class="logo logo-dark"> <span class="logo-sm">
+								<img src="assets/img/nwlogo.png" alt="" height="82">
+							</span> <span class="logo-lg">
+								<img src="assets/img/nwlogo.png" alt="" height="80">
+							</span> </a>
+					<a href="index.html" class="logo logo-light"> <span class="logo-sm">
+								<img src="assets/img/nwlogo.png" alt="" height="82">
+							</span> <span class="logo-lg">
+								<img src="assets/img/nwlogo.png" alt="" height="80">
+							</span> </a>
+					<!--- Sidemenu -->
+					<div id="sidebar-menu">
+						<!-- Left Menu Start -->
+						<ul class="metismenu list-unstyled" id="side-menu">
+							<li class="menu-title">Menu</li>
+							<li>
+								<a href="adminhub.html"> <i class="iconify " data-icon="uil-home-alt" data-inline="false"></i> <span class="badge rounded-pill bg-primary float-end"></span> <span>Dashboard</span> </a>
+							</li>
+						<li class="menu-title">Others</li>
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-store"></i> <span>All inventory</span> </a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="stocks.html">Stocks</a></li>
+								<li><a href="orders.html">Orders</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-invoice"></i> <span>Invoices</span> </a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="invoices-list.html">Invoice List</a></li>
+								<li><a href="invoices-detail.html">Invoice Detail</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="uil-book-alt"></i> <span>Customers</span> </a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="customerinfo.html">Customer Infomation</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="login.html">Sign Out</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Sidebar -->
+			</div>
+		</div>
+		<!-- Left Sidebar End -->
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<!-- ============================================================== -->
+		<div class="main-content">
+			<div class="page-content">
+				<div class="container-fluid">
+					<!-- start page title -->
+					<div class="row">
+						<div class="col-12">
+							<div class="page-title-box d-flex align-items-center justify-content-between">
+								<h4 class="mb-0">Orders</h4>
+								<div class="page-title-right">
+									<ol class="breadcrumb m-0">
+										<li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+										<li class="breadcrumb-item active">Orders</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end page title -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div>
+								<div class="float-end">
+									<form class="d-inline-flex mb-3">
+										<label class="form-check-label my-2 me-2" for="order-selectinput">Orders</label>
+										<select class="form-select" id="order-selectinput">
+											<option selected>All</option>
+											<option value="1">Active</option>
+											<option value="2">Unpaid</option>
+										</select>
+									</form>
+								</div>
+								<button type="button" class="btn btn-success waves-effect waves-light mb-3"><i class="mdi mdi-plus me-1"></i> Add New Order</button>
+							</div>
+							<div class="table-responsive mb-4">
+								<table class="table table-centered datatable dt-responsive nowrap table-card-list" style="border-collapse: collapse; border-spacing: 0 12px; width: 100%;">
+									<thead>
+										<tr class="bg-transparent">
+											<th style="width: 20px;">
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck">
+													<label class="form-check-label" for="ordercheck"></label>
+												</div>
+											</th>
+											<th>Order ID</th>
+											<th>Date</th>
+											<th>Billing Name</th>
+											<th>Total</th>
+											<th>Payment Status</th>
+											<th style="width: 120px;">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck1">
+													<label class="form-check-label" for="ordercheck1"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0132</a> </td>
+											<td> 10 Jul, 2020 </td>
+											<td>Ali Ad</td>
+											<td> RM142 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck2">
+													<label class="form-check-label" for="ordercheck2"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0131</a> </td>
+											<td> 09 Jul, 2020 </td>
+											<td>Min Hao</td>
+											<td> RM130 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck3">
+													<label class="form-check-label" for="ordercheck3"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0130</a> </td>
+											<td> 08 Jul, 2020 </td>
+											<td>Toto Wolf</td>
+											<td> RM123 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-warning font-size-12">unpaid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck4">
+													<label class="form-check-label" for="ordercheck4"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0129</a></td>
+											<td> 07 Jul, 2020 </td>
+											<td>Maria Zulkifli</td>
+											<td> RM173 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck5">
+													<label class="form-check-label" for="ordercheck5"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0128</a></td>
+											<td> 07 Jul, 2020 </td>
+											<td>Leu Kwan</td>
+											<td> RM160 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-danger font-size-12">Chargeback</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck6">
+													<label class="form-check-label" for="ordercheck6"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0127</a> </td>
+											<td> 06 Jul, 2020 </td>
+											<td>Aminnisa</td>
+											<td> RM165 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck7">
+													<label class="form-check-label" for="ordercheck7"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0126</a> </td>
+											<td> 05 Jul, 2020 </td>
+											<td>Daniel Haiqal</td>
+											<td> RM161 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck8">
+													<label class="form-check-label" for="ordercheck8"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0125</a> </td>
+											<td> 04 Jul, 2020 </td>
+											<td>Farah Fuaad</td>
+											<td> RM153 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-warning font-size-12">unpaid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck9">
+													<label class="form-check-label" for="ordercheck9"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0124</a></td>
+											<td> 04 Jul, 2020 </td>
+											<td>Naufal syukrey</td>
+											<td> RM152 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck10">
+													<label class="form-check-label" for="ordercheck10"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0123</a> </td>
+											<td> 03 Jul, 2020 </td>
+											<td>Lisa Farid</td>
+											<td> RM167 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck11">
+													<label class="form-check-label" for="ordercheck11"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0122</a> </td>
+											<td> 02 Jul, 2020 </td>
+											<td>Connie Franco</td>
+											<td> RM163 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check text-center font-size-16">
+													<input type="checkbox" class="form-check-input" id="ordercheck12">
+													<label class="form-check-label" for="ordercheck12"></label>
+												</div>
+											</td>
+											<td><a href="javascript: void(0);" class="text-dark fw-bold">#MN0121</a> </td>
+											<td> 02 Jul, 2020 </td>
+											<td>Lara Marina</td>
+											<td> RM171 </td>
+											<td>
+												<div class="badge bg-pill bg-soft-success font-size-12">Paid</div>
+											</td>
+											<td> <a href="javascript:void(0);" class="px-3 text-primary"><i class="uil uil-pen font-size-18"></i></a> <a href="javascript:void(0);" class="px-3 text-danger"><i class="uil uil-trash-alt font-size-18"></i></a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- end table -->
+						</div>
+					</div>
+					<!-- end row -->
+				</div>
+				<!-- container-fluid -->
+			</div>
+	</div>
+	<!-- END layout-wrapper -->
+	<!-- Right Sidebar -->
+	<div class="right-bar">
+		<div data-simplebar class="h-100">
+			<div class="rightbar-title d-flex align-items-center px-3 py-4">
+				<h5 class="m-0 me-2">Settings</h5>
+				<a href="javascript:void(0);" class="right-bar-toggle ms-auto"> <i class="mdi mdi-close noti-icon"></i> </a>
+			</div>
+			<!-- Settings -->
+			<hr class="mt-0" />
+			<h6 class="text-center mb-0">Choose Layouts</h6>
+			<div class="p-4">
+				<div class="mb-2"> <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images"> </div>
+				<div class="form-check form-switch mb-3">
+					<input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+					<label class="form-check-label" for="light-mode-switch">Light Mode</label>
+				</div>
+				<div class="mb-2"> <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images"> </div>
+				<div class="form-check form-switch mb-3">
+					<input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" />
+					<label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+				</div>
+				<div class="mb-2"> <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images"> </div>
+				<div class="form-check form-switch mb-3">
+					<input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" />
+					<label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+				</div>
+				<div class="mb-2"> <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images"> </div>
+				<div class="form-check form-switch mb-5">
+					<input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
+					<label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+				</div>
+			</div>
+		</div>
+		<!-- end slimscroll-menu-->
+	</div>
+	<!-- /Right-bar -->
+	<!-- Right bar overlay-->
+	<div class="rightbar-overlay"></div>
+	<!-- JAVASCRIPT -->
+	<script src="assets/libs/jquery/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/libs/metismenu/metisMenu.min.js"></script>
+	<script src="assets/libs/simplebar/simplebar.min.js"></script>
+	<script src="assets/libs/node-waves/waves.min.js"></script>
+	<script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+	<!-- Required datatable js -->
+	<script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+	<!-- Responsive examples -->
+	<script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+	<!-- init js -->
+	<script src="assets/js/pages/ecommerce-datatables.init.js"></script>
+	<!-- App js -->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
